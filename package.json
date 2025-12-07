@@ -1,7 +1,9 @@
 {
   "name": "backend-api",
   "scripts": {
-    "dev": "bun run --hot src/index.ts"
+    "dev": "bun run --hot src/index.ts",
+    "debug": "bun --inspect src/index.ts",
+    "debug:wait": "bun --inspect-wait=0.0.0.0:9229 src/index.ts"
   },
   "dependencies": {
     "@prisma/client": "6.18.0",

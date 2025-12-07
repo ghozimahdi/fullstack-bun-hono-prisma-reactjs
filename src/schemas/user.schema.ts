@@ -17,7 +17,7 @@ export const createUserSchema = z.object({
       "Username hanya boleh mengandung huruf, angka, dan underscore"
     ),
 
-  email: z.string().trim().toLowerCase().email("Format email tidak valid"),
+  email: z.email("Format email tidak valid"),
 
   password: z
     .string()
